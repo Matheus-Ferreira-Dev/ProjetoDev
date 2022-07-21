@@ -1,0 +1,166 @@
+* {
+  font-family: "roboto" sans- serif;
+  padding: 0;
+  margin: 0;
+} 
+
+p {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+}
+
+
+  header {
+  min-height: 600px;
+  background: url("img/praia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 64px;
+  color: white;
+}
+
+.button {
+  padding: 10px 50px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.25s ease-out;
+}
+
+.button-space {
+  margin-top: 40px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.button-primary {
+  border: 2px solid black;
+  color: rgb(0, 0, 0)
+}
+
+.button-primary:hover {
+  background-color: darkkhaki;
+}
+
+.city {
+  display: flex;
+  width: 100%;
+}
+
+.item-50-flex {
+flex-basis: 50%;
+}
+
+.city-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 35px;
+  color: black;
+}
+
+.city-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.texto2 {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.services {
+    padding: 40px 0;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  
+}
+
+.services-content {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+
+}
+
+.services-card {
+background-color: #00a7ef;
+}
+
+.services-text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0;
+}
+
+.contact {
+  display: flex;
+
+}
+
+.contact-title {
+  margin-bottom: 20px ;
+  text-align: center;
+}
+
+.services-image {
+  width: 100%;
+}
+
+.title-contact {
+  color: black;
+}
+
+footer {
+  background-color: dimgray;
+  color: white;
+  font-size: 32px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+  @media (max-width: 768px) {
+    .city {
+      flex-direction: column-reverse;
+ }
+ .services-content, .contact {
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .services-image {
+  object-fit: cover;
+  max-height: 250px;
+ }
+  }
+  
+ 
