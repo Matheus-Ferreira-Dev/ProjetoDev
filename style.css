@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,200&display=swap');
+
 * {
-  font-family: "roboto" sans- serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-} 
+}
 
 p {
   font-size: 16px;
@@ -10,10 +12,9 @@ p {
   margin-top: 10px;
 }
 
-
-  header {
+header {
   min-height: 600px;
-  background: url("img/praia.jpg");
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/fundo1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,6 +22,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+header p {
+  font-size: 22px;
+  text-align: center;
 }
 
 .titulo {
@@ -45,7 +51,7 @@ p {
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.50);
 }
 
 .button-primary {
@@ -54,7 +60,10 @@ p {
 }
 
 .button-primary:hover {
-  background-color: darkkhaki;
+  background-color: black;
+  border: white;
+  color: white;
+  transition: .3s;
 }
 
 .city {
@@ -63,7 +72,7 @@ p {
 }
 
 .item-50-flex {
-flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .city-image {
@@ -74,6 +83,7 @@ flex-basis: 50%;
 h2 {
   font-size: 35px;
   color: black;
+  text-align: center;
 }
 
 .city-content {
@@ -94,13 +104,13 @@ h2 {
 }
 
 .services {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .container {
   max-width: 970px;
   margin: 0 auto;
-  
+
 }
 
 .services-content {
@@ -111,7 +121,7 @@ h2 {
 }
 
 .services-card {
-background-color: #00a7ef;
+  background-color: #00a7ef;
 }
 
 .services-text {
@@ -128,7 +138,7 @@ background-color: #00a7ef;
 }
 
 .contact-title {
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -141,26 +151,26 @@ background-color: #00a7ef;
 }
 
 footer {
-  background-color: dimgray;
+  background-color: black;
   color: white;
   font-size: 32px;
   padding: 20px 0;
   text-align: center;
 }
 
-  @media (max-width: 768px) {
-    .city {
-      flex-direction: column-reverse;
- }
- .services-content, .contact {
-  flex-direction: column;
-  gap: 20px;
- }
-
- .services-image {
-  object-fit: cover;
-  max-height: 250px;
- }
+@media (max-width: 768px) {
+  .city {
+    flex-direction: column-reverse;
   }
-  
- 
+
+  .services-content,
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-image {
+    object-fit: cover;
+    max-height: 250px;
+  }
+}
